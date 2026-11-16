@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "titulo": "Pizza Muzzarella",
+    "descripcion": "Salsa de tomate casera, abundante muzzarella, orégano y aceitunas verdes.",
+    "precio": 12000,
+    "imagen": "img/muzza.jpg",
+    "alt": "Pizza Muzzarella artesanal con aceitunas verdes"
+  },
+  {
+    "id": 2,
+    "titulo": "Pizza Napolitana",
+    "descripcion": "Salsa de tomate, muzzarella, rodajas de tomate fresco, ajo y provenzal.",
+    "precio": 17000,
+    "imagen": "img/napolitana.jpg",
+    "alt": "Pizza Napolitana con rodajas de tomate fresco y provenzal"
+  },
+  {
+    "id": 3,
+    "titulo": "Pizza Fugazzeta",
+    "descripcion": "Masa rellena de muzzarella, cubierta con cebolla caramelizada y orégano.",
+    "precio": 17000,
+    "imagen": "img/fugazeta.jpg",
+    "alt": "Pizza Fugazzeta con abundante cebolla y queso"
+  },
+  {
+    "id": 4,
+    "titulo": "Pizza Calabresa",
+    "descripcion": "Salsa de tomate, muzzarella, longaniza calabresa en rodajas y ají molido.",
+    "precio": 17000,
+    "imagen": "img/calabresa.jpg",
+    "alt": "Pizza Calabresa con rodajas de longaniza"
+  },
+  {
+    "id": 5,
+    "titulo": "Pizza de Jamón",
+    "descripcion": "Salsa de tomate casera, jamón cocido, abundante muzzarella, orégano y aceitunas verdes.",
+    "precio": 17000,
+    "imagen": "img/muzzarella_c_jamon.jpg",
+    "alt": "Pizza de Muzzarella con jamón cocido"
+  },
+  {
+    "id": 6,
+    "titulo": "Jamón y Morrones",
+    "descripcion": "Salsa de tomate, muzzarella, jamón cocido seleccionado y morrones asados.",
+    "precio": 20000,
+    "imagen": "img/jamon_y_morrones.jpg",
+    "alt": "Pizza de Jamón y Morrones asados"
+  },
+  {
+    "id": 7,
+    "titulo": "Jamón y Tomate",
+    "descripcion": "Muzzarella, jamón cocido, rodajas de tomate fresco y albahaca.",
+    "precio": 20000,
+    "imagen": "img/jamon_y_tomates.jpg",
+    "alt": "Pizza de Jamón y Tomate fresco"
+  },
+  {
+    "id": 8,
+    "titulo": "Calabresa con Jamón",
+    "descripcion": "Muzzarella, longaniza calabresa, jamón, morrones y aceitunas negras.",
+    "precio": 20000,
+    "imagen": "img/calabreza_c_jamon.jpg",
+    "alt": "Pizza Calabresa con jamón y morrones"
+  },
+  {
+    "id": 9,
+    "titulo": "Pizza Roquefort",
+    "descripcion": "Salsa de tomate casera, muzzarella, queso azul roquefort y aceitunas negras.",
+    "precio": 19000,
+    "imagen": "img/roquefort.jpg",
+    "alt": "Pizza de Muzzarella con queso Roquefort"
+  },
+  {
+    "id": 10,
+    "titulo": "Fugazzeta con Jamón",
+    "descripcion": "Masa media masa, abundante cebolla, muzzarella y fetas de jamón cocido.",
+    "precio": 20000,
+    "imagen": "img/fugazeta_c_jamon.jpg",
+    "alt": "Pizza Fugazzeta con jamón cocido"
+  },
+  {
+    "id": 11,
+    "titulo": "Fugazzeta con Roquefort",
+    "descripcion": "Combinación intensa de cebolla dorada, muzzarella y queso roquefort.",
+    "precio": 21000,
+    "imagen": "img/fugazeta_c_roquefort.jpg",
+    "alt": "Pizza Fugazzeta con queso Roquefort"
+  },
+  {
+    "id": 12,
+    "titulo": "Gran Pizzarella",
+    "descripcion": "La especialidad de la casa: muzzarella, jamón, morrones, tomate, huevo y aceitunas.",
+    "precio": 23000,
+    "imagen": "img/gran_pizzarella.jpg",
+    "alt": "Pizza Gran Pizzarella especial de la casa"
+  }
+]

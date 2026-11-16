@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Conocé la historia de Pizzarella, nuestra masa madre con 48 horas de fermentación y el proceso de elaboración artesanal de nuestras pizzas."
+    />
+    <meta
+      name="keywords"
+      content="Pizzarella, historia, masa madre, pizzas artesanales, Barracas"
+    />
+    <meta name="author" content="CM-Hernandez" />
+    <title>Sobre Nosotros | Pizzarella</title>
+    <link rel="icon" type="image/png" href="../img/pizzarella.png" />
+
+    <!-- FUENTES DE GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONOS DE FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- ARCHIVO CSS EXTERNO -->
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <header class="header">
+      <div class="header__logo-container">
+        <a href="../index.html" class="header__logo">🍕 Pizzarella</a>
+      </div>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+      <nav class="nav" id="main-navigation" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="../index.html" class="nav__link">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a href="../index.html#menu" class="nav__link">Menú</a>
+          </li>
+          <li class="nav__item">
+            <a href="../index.html#resenas" class="nav__link">Reseñas</a>
+          </li>
+          <li class="nav__item">
+            <a href="sobreNosotros.html" class="nav__link active">Nosotros</a>
+          </li>
+          <li class="nav__item">
+            <a href="contacto.html" class="nav__link">Contacto</a>
+          </li>
+          <!-- ENLACE AL CARRITO CON CONTADOR DINÁMICO -->
+          <li class="nav__item">
+            <a
+              href="carrito.html"
+              class="nav__link nav__link--cart"
+              aria-label="Ir al carrito de compras"
+            >
+              <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+              Carrito
+              <span id="contador-carrito" class="carrito-contador">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-container">
+      <!-- SECCIÓN HISTORIA -->
+      <section class="historia">
+        <h1 class="section-title">Nuestra Historia</h1>
+        <p class="historia__texto">
+          Pizzarella nació en 2012 con la pasión de traer la auténtica pizza a
+          la ciudad. Utilizamos hornos eléctricos y a gas, masa con 48 horas de
+          fermentación natural e ingredientes seleccionados directamente de
+          productores locales.
+        </p>
+        <div class="historia__grid">
+          <article class="card-info">
+            <i
+              class="fa-solid fa-fire card-info__icon"
+              aria-hidden="true"
+            ></i>
+            <h2>Horno a Gas y Eléctrico</h2>
+            <p>
+              Cocinamos nuestras pizzas a más de 280°C para lograr el piso
+              crocante y bordes aireados únicos.
+            </p>
+          </article>
+          <article class="card-info">
+            <i
+              class="fa-solid fa-wheat-awn card-info__icon"
+              aria-hidden="true"
+            ></i>
+            <h2>Masa Madre</h2>
+            <p>
+              Fermentación lenta que otorga un sabor distinguido y una digestión
+              liviana.
+            </p>
+          </article>
+          <article class="card-info">
+            <i
+              class="fa-solid fa-truck-fast card-info__icon"
+              aria-hidden="true"
+            ></i>
+            <h2>Envíos Rápidos</h2>
+            <p>
+              Empaque térmico especial para que la pizza llegue tan caliente
+              como recién salida del horno.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECCIÓN MULTIMEDIA (VIDEO LOCAL) -->
+      <section class="multimedia-section">
+        <h2 class="section-title">Conocé Nuestro Proceso de Elaboración</h2>
+        <div class="video-wrapper">
+          <video
+            controls
+            poster="../img/cap_video.jpeg"
+            class="video-responsive"
+          >
+            <source src="../video/video_pizza.mp4" type="video/mp4" />
+            Tu navegador no soporta la reproducción de video HTML5.
+          </video>
+        </div>
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA (FOOTER) -->
+    <footer class="footer">
+      <div class="footer__content">
+        <p>
+          <strong>Pizzarella &copy; 2026</strong> - Todos los derechos
+          reservados.
+        </p>
+
+        <!-- CRÉDITO DE AUTOR -->
+        <p class="footer__author">
+          Diseñado con <i class="fa-solid fa-heart" aria-hidden="true"></i> por
+          <a
+            href="https://cmarceloh.github.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><strong>CM-Hernandez</strong></a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- ARCHIVOS JAVASCRIPT SEPARADOS POR RESPONSABILIDAD -->
+    <script src="../js/storage.js" defer></script>
+    <script src="../js/ui.js" defer></script>
+  </body>
+</html>

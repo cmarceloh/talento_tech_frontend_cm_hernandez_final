@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pizzarella: las mejores pizzas artesanales media masa al horno en Barracas, CABA. Hacé tu pedido online y disfrutá el verdadero sabor porteño."
+    />
+    <meta
+      name="keywords"
+      content="pizzería, pizzas artesanales, Barracas, delivery de pizza, Pizzarella, muzzarella, fugazzeta"
+    />
+    <meta name="author" content="CM-Hernandez" />
+    <title>Pizzarella | Las mejores pizzas artesanales de Barracas</title>
+    <link rel="icon" type="image/png" href="img/pizzarella.png" />
+
+    <!-- FUENTES DE GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONOS DE FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- ARCHIVO CSS EXTERNO -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- ENCABEZADO Y NAVEGACIÓN PRINCIPAL -->
+    <header class="header">
+      <div class="header__logo-container">
+        <a href="index.html" class="header__logo">🍕 Pizzarella</a>
+      </div>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="main-navigation"
+      >
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+      <nav class="nav" id="main-navigation" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link active">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#menu" class="nav__link">Menú</a>
+          </li>
+          <li class="nav__item">
+            <a href="#resenas" class="nav__link">Reseñas</a>
+          </li>
+          <li class="nav__item">
+            <a href="pages/sobreNosotros.html" class="nav__link">Nosotros</a>
+          </li>
+          <li class="nav__item">
+            <a href="pages/contacto.html" class="nav__link">Contacto</a>
+          </li>
+          <!-- ENLACE AL CARRITO CON CONTADOR DINÁMICO -->
+          <li class="nav__item">
+            <a
+              href="pages/carrito.html"
+              class="nav__link nav__link--cart"
+              aria-label="Ir al carrito de compras"
+            >
+              <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+              Carrito
+              <span id="contador-carrito" class="carrito-contador">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+      <!-- SECCIÓN PRINCIPAL DE BIENVENIDA -->
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Pizzas Artesanales | Media Masa al Horno</h1>
+          <p class="hero__subtitle">
+            Ingredientes frescos y el verdadero sabor Porteño en tu mesa.
+          </p>
+          <a href="#menu" class="hero__btn">Ver Menú</a>
+        </div>
+      </section>
+
+      <!-- SECCIÓN PRODUCTOS (FLEXBOX - RENDERIZADOS CON FETCH DESDE data/productos.json) -->
+      <section class="productos" id="menu">
+        <h2 class="section-title">Nuestras Pizzas Destacadas</h2>
+        <p class="section-subtitle">
+          Seleccioná tu favorita y agregala al carrito
+        </p>
+
+        <p
+          id="mensaje-productos"
+          class="mensaje-productos"
+          role="status"
+          aria-live="polite"
+        >
+          Cargando pizzas...
+        </p>
+
+        <div class="productos__container" id="productos-container"></div>
+      </section>
+
+      <!-- SECCIÓN RESEÑAS (CSS GRID) -->
+      <section class="resenas" id="resenas">
+        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+        <div class="resenas__grid">
+          <article class="card-resena">
+            <div class="card-resena__header">
+              <i
+                class="fa-solid fa-user-ninja card-resena__avatar"
+                aria-hidden="true"
+              ></i>
+              <div>
+                <h3>Fernando Hernandez</h3>
+                <div class="card-resena__stars" aria-label="5 de 5 estrellas">
+                  <i class="fa-solid fa-star" aria-hidden="true"></i
+                  ><i class="fa-solid fa-star" aria-hidden="true"></i
+                  ><i class="fa-solid fa-star" aria-hidden="true"></i
+                  ><i class="fa-solid fa-star" aria-hidden="true"></i
+                  ><i class="fa-solid fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <p class="card-resena__texto">
+              "La masa un despelote, muy pero muy rica, Pizzarella es increíble.
+              Llegó súper caliente y crujiente. ¡Recomiendo la Fugazzeta!"
+            </p>
+          </article>
+
+          <article class="card-resena">
+            <div class="card-resena__header">
+              <i
+                class="fa-solid fa-user-astronaut card-resena__avatar"
+                aria-hidden="true"
+              ></i>
+              <div>
+                <h3>Jesica Corrale</h3>
+                <div class="card-resena__stars" aria-label="5 de 5 estrellas">
+                  <i class="fa-solid fa-star" aria-hidden="true"></i
+                  ><i class="fa-solid fa-star" aria-hidden="true"></i
+                  ><i class="fa-solid fa-star" aria-hidden="true"></i
+                  ><i class="fa-solid fa-star" aria-hidden="true"></i
+                  ><i class="fa-solid fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <p class="card-resena__texto">
+              "Excelente atención y el pedido llegó rapidísimo. Se nota la
+              calidad de los ingredientes. Mi pizzería favorita literal."
+            </p>
+          </article>
+
+          <article class="card-resena">
+            <div class="card-resena__header">
+              <i
+                class="fa-solid fa-user-tie card-resena__avatar"
+                aria-hidden="true"
+              ></i>
+              <div>
+                <h3>Marcos Corrale</h3>
+                <div class="card-resena__stars" aria-label="4 de 5 estrellas">
+                  <i class="fa-solid fa-star" aria-hidden="true"></i
+                  ><i class="fa-solid fa-star" aria-hidden="true"></i
+                  ><i class="fa-solid fa-star" aria-hidden="true"></i
+                  ><i class="fa-solid fa-star" aria-hidden="true"></i
+                  ><i class="fa-regular fa-star" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <p class="card-resena__texto">
+              "La pizza de Jamón y Morrones es de otro nivel. Gran variedad de
+              sabores y excelente relación calidad-precio."
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- PIE DE PÁGINA (FOOTER) -->
+    <footer class="footer">
+      <div class="footer__content">
+        <p>
+          <strong>Pizzarella &copy; 2026</strong> - Todos los derechos
+          reservados.
+        </p>
+
+        <!-- CRÉDITO DE AUTOR -->
+        <p class="footer__author">
+          Diseñado con <i class="fa-solid fa-heart" aria-hidden="true"></i> por
+          <a
+            href="https://cmarceloh.github.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><strong>CM-Hernandez</strong></a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- ARCHIVOS JAVASCRIPT SEPARADOS POR RESPONSABILIDAD -->
+    <script src="js/storage.js" defer></script>
+    <script src="js/ui.js" defer></script>
+    <script src="js/funcionesCarrito.js" defer></script>
+    <script src="js/index.js" defer></script>
+  </body>
+</html>
