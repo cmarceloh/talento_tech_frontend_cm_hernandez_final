@@ -53,6 +53,12 @@ El formulario permite enviar nombre, correo electrónico y mensaje. Los datos se
 
 ---
 
-## Sitio publicado
+## Despliegue
 
-[Ver Pizzarella en Vercel](https://talentotechfrontendcmhernandezfinal.vercel.app/)
+En GitHub Pages:
+
+[https://cmarceloh.github.io/talento_tech_frontend_cm_hernandez_final/](https://cmarceloh.github.io/talento_tech_frontend_cm_hernandez_final/)
+
+Alternativo Vercel:
+
+[https://talentotechfrontendcmhernandezfinal.vercel.app/](https://talentotechfrontendcmhernandezfinal.vercel.app/)
